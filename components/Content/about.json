@@ -1,0 +1,29 @@
+{
+  "metaTitle": "Trusted Plumbing Services in [location] | About Us",
+  "metaDescription": "Looking for a trusted plumber in [location]? 24/7 emergency plumbing, drain cleaning, water heater repair, and sewer service from licensed local pros. Call [phone] for fast response and reliable service.",
+  "bannerQuote": "",
+  "bannerImage": "https://ik.imagekit.io/z6skgnupx/plumberinlongbeach_net/Plumbing_Services_about_bannerImage_s5mhwy_Sc.jpg",
+  "h1Banner": "Trusted Plumbing Services in [location]",
+  "p1Banner": "Looking for a trusted plumber in [location]? 24/7 emergency plumbing, drain cleaning, water heater repair, and sewer service from licensed local pros. Call [phone] for fast response and reliable service.",
+  "p2": "Plumber In Long Beach provides full-service plumbing across [location] for homeowners, businesses, property managers, and contractors. Our experienced, licensed plumbers handle emergency leak repairs, slab leak detection, sewer line replacement, hydro-jet drain cleaning, water heater repair and replacement (tank & tankless), repiping, and plumbing for kitchen and bathroom remodels. We prioritize fast response times, transparent pricing, and durable repairs backed by warranties. With fully stocked service vans, video camera inspections, and advanced leak-detection technology, we diagnose problems accurately and fix them right the first time. Whether you need a 24/7 emergency plumber, preventative maintenance, or permit-ready commercial plumbing work in [location], our local team delivers professional service and clear communication from estimate to completion. Call [phone] for same-day scheduling and a free on-site estimate.",
+  "h2Image": "https://ik.imagekit.io/z6skgnupx/plumberinlongbeach_net/Plumbing_Services_about_h2Image_IFuqp8m6k.jpg",
+  "missionSection": [
+    {
+      "title": "Our Mission",
+      "description": "To provide fast, honest, and expert plumbing services throughout [location], combining emergency availability, proven workmanship, and transparent pricing so customers can trust their home or business plumbing is in capable hands."
+    },
+    {
+      "title": "Our Vision",
+      "description": "To be the go-to local plumbing company in [location] known for 24/7 emergency response, modern diagnostic tools like camera inspections and hydro-jetting, and long-lasting solutions that protect properties and save customers time and money."
+    },
+    {
+      "title": "Our Values",
+      "description": "Safety, integrity, and craftsmanship. We arrive on time, treat every property with respect, communicate clearly about options and costs, and stand behind our work with industry-standard warranties and follow-up support."
+    }
+  ],
+  "areaweserveSection": {
+    "description": "We proudly provide plumbing repairs, installation, and emergency service across [location], serving single-family homes, multi-unit buildings, restaurants, retail stores, construction sites, and property management companies.",
+    "linkText": "Check our plumbing service locations here.",
+    "link": "/locations"
+  }
+}

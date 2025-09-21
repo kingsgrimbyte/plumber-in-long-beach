@@ -1,4 +1,5 @@
 import  ContactInfo  from '@/components/Content/ContactInfo.json';
+import { headers } from 'next/headers';
 // middleware.ts
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
@@ -6,9 +7,10 @@ import type { NextRequest } from "next/server";
 // Function to fetch subdomain data from API
 async function getSubdomainData() {
   try {
-    const baseUrl = typeof window !== 'undefined' 
-      ? `${window.location.protocol}//${window.location.host}`
-      :   'http://localhost:3000';
+  const headersList = headers();
+    const proto: any = headersList.get("x-forwarded-proto") || "http";
+    const host = headersList.get("host");
+    const baseUrl = `${proto}://${host}`;
     const response = await fetch(`${baseUrl}/api/subdomains`, {
       cache: 'no-store'
     });

@@ -95,7 +95,7 @@ export async function GET() {
                           .replace(/\s+/g, "-");
         return `
   <url>
-    <loc>${origin}/neighborhoods/${neighborhoodSlug}/</loc>
+    <loc>${origin}/${neighborhoodSlug}/</loc>
     <lastmod>${now}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

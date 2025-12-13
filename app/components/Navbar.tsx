@@ -17,7 +17,7 @@ const Navbar = () => {
   const navLink =["Home", "Locations", "Services", "About", "Contact"] 
   return (
     <>
-      <nav className=" sticky   top-0 z-[999] flex h-[5rem]  w-screen items-center justify-center border-y-2 bg-white px-4 md:w-full md:px-0 !overflow-hidden">
+      <nav className=" sticky   top-0 z-[999] flex h-[5rem]  w-screen items-center justify-center border-y-2 bg-white px-4 md:w-full md:px-0">
         <div className=" relative w-screen md:w-full md:max-w-[1280px] md:px-10  md:py-4">
           <div className="mt-0 flex flex-row justify-between space-x-8 rounded-2xl rounded-tr-none px-4 text-sm font-medium md:mr-6 md:justify-around">
             <div className="flex ">
@@ -79,6 +79,7 @@ const Navbar = () => {
               : "absolute bottom-0 left-[-100%] right-0 top-0 flex   h-screen w-full items-center justify-center border border-main bg-main text-4xl text-white  duration-300 ease-in sm:hidden"
           }
         >
+          
           <div className=" flex h-full w-full flex-col justify-around p-6 py-10 font-medium">
             <div className="">
               {/* <div className="text-xl font-bold ">Menu</div> */}

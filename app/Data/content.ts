@@ -1,3 +1,4 @@
+import localImages from "@/local-image-paths.json"
 // DEFAULT: Import statements with enhanced error handling for all JSON content files
 let aboutData: any;
 let contactPageDataJson: any;
@@ -18,6 +19,7 @@ try {
   );
   aboutData = {};
 }
+
 
 try {
   contactPageDataJson = require("@/components/Content/contact.json");
@@ -272,90 +274,90 @@ function ensureReviewsSection(reviewsSection: any[]): any[] {
 // DEFAULT: Helper function to ensure service data lists have complete data with comprehensive fallbacks
 function ensureServiceDataLists(serviceData: any): any {
   const defaultServiceData = {
-    title: "DEFAULT: Complete Water Damage Restoration Solutions",
+    title: "DEFAULT: Complete Dumpster Rental Solutions",
     p: "",
     lists: [
       {
-        title: "DEFAULT: Emergency Water Damage Restoration in [location]",
+        title: "DEFAULT: Residential Dumpster Rental in [location]",
         description:
-          "DEFAULT: Call Us At [phone]. We offer emergency water damage restoration in [location] for floods, burst pipes, storms, and water emergencies.",
-        h2: "DEFAULT: Need Water Damage Restoration for Your Property?",
-        p2: "DEFAULT: Emergency water damage restoration in [location] makes it easy to restore your property quickly and efficiently. Whether you're dealing with flood damage or burst pipes, we've got the right equipment for the job. Call Us At [phone]",
-        h3: "DEFAULT: Perfect For All Types of Water Damage",
-        p3: "DEFAULT: Flood damage | Burst pipes | Storm damage | Sewage backups | Appliance leaks | Roof leaks | Basement flooding | Emergency water extraction",
+          "DEFAULT: Call Us At [phone]. We offer residential dumpster rental in [location] for home cleanouts, remodeling, yard waste, and more.",
+        h2: "DEFAULT: Need a Dumpster for Your Home Project?",
+        p2: "DEFAULT: Residential dumpster rental in [location] makes it easy to get rid of clutter, renovation debris, and junk without the trips to the dump. Whether you're clearing the garage or remodeling your kitchen, we've got the right size bin for the job. Call Us At [phone]",
+        h3: "DEFAULT: Perfect For Everyday Home Cleanup",
+        p3: "DEFAULT: Spring cleaning | Garage cleanouts | DIY renovations | Moving day trash | Yard debris | Storm cleanup | Furniture disposal | Basement junk removal",
         seoContent:
-          "DEFAULT: <h2>Emergency Water Damage Restoration in [location]</h2><p>Our emergency water damage restoration service in [location] is designed to respond quickly and effectively. We deliver professional restoration services with 24/7 availability, perfect for emergencies big and small. Call Us At [phone]</p>",
-        slug: "DEFAULT: emergency-water-damage-restoration",
+          "DEFAULT: <h2>Residential Dumpster Rentals in [location]</h2><p>Our residential dumpster rental service in [location] is designed to keep your home projects organized and stress-free. We deliver driveway-friendly bins with flexible rental periods, perfect for cleanups big and small. Call Us At [phone]</p>",
+        slug: "DEFAULT: residential-dumpster-rental",
         imageUrl:
           "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
       },
       {
-        title: "DEFAULT: Commercial Water Damage Restoration in [location]",
+        title: "DEFAULT: Construction Dumpster Rental in [location]",
         description:
-          "DEFAULT: Call Us At [phone]. Dependable commercial water damage restoration in [location] for businesses and properties needing reliable restoration services.",
-        h2: "DEFAULT: Built for Large-Scale Water Damage",
-        p2: "DEFAULT: Our commercial water damage restoration in [location] supports businesses, office buildings, and commercial properties with professional restoration services. With fast response and thorough restoration, you keep operations running smoothly. Call Us At [phone]",
-        h3: "DEFAULT: Trusted by Local Businesses",
-        p3: "DEFAULT: Office buildings | Retail stores | Restaurants | Warehouses | Manufacturing facilities | Medical facilities | Schools | Hotels",
+          "DEFAULT: Call Us At [phone]. Dependable construction dumpster rental in [location] for contractors and job sites needing fast debris removal.",
+        h2: "DEFAULT: Built for Heavy-Duty Jobs",
+        p2: "DEFAULT: Our construction dumpster rental in [location] supports roofing projects, demolitions, remodels, and large-scale debris hauling. With fast drop-offs and pickup scheduling, you stay on track without waste getting in the way. Call Us At [phone]",
+        h3: "DEFAULT: Trusted by Local Contractors",
+        p3: "DEFAULT: Roofing jobs | Demolition debris | Remodeling waste | Concrete and drywall | Contractor projects | Framing scraps | Window replacements | Flooring tear-outs",
         seoContent:
-          "DEFAULT: <h2>Commercial Water Damage Restoration in [location]</h2><p>We supply reliable commercial water damage restoration in [location] tailored to meet the demanding needs of local businesses and property managers. From emergency response to complete restoration, we've got your property covered. Call Us At [phone]</p>",
-        slug: "DEFAULT: commercial-water-damage-restoration",
+          "DEFAULT: <h2>Construction Dumpster Rentals in [location]</h2><p>We supply reliable construction dumpster rental in [location] tailored to meet the fast-paced demands of local contractors and crews. From demo days to final cleanup, we've got your waste covered. Call Us At [phone]</p>",
+        slug: "DEFAULT: construction-dumpster-rental",
         imageUrl:
           "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
       },
       {
-        title: "DEFAULT: Residential Water Damage Restoration in [location]",
+        title: "DEFAULT: Commercial Dumpster Rental in [location]",
         description:
-          "DEFAULT: Call Us At [phone]. Residential water damage restoration in [location] with flexible service for homes, apartments, and condos.",
-        h2: "DEFAULT: Keep Your Home Safe and Dry",
-        p2: "DEFAULT: Our residential water damage restoration in [location] is ideal for homes, apartments, and residential properties. We provide comprehensive solutions and dependable service with emergency availability. Call Us At [phone]",
-        h3: "DEFAULT: Ideal for Home Protection",
-        p3: "DEFAULT: Single-family homes | Apartments | Condominiums | Townhomes | Basements | Bathrooms | Kitchens | Living areas",
+          "DEFAULT: Call Us At [phone]. Commercial dumpster rental in [location] with flexible terms for property managers, retail spaces, and offices.",
+        h2: "DEFAULT: Keep Business Moving, Trash-Free",
+        p2: "DEFAULT: Our commercial dumpster rental in [location] is ideal for business renovations, property cleanouts, and daily operations that generate extra waste. We provide scalable solutions and dependable service with flexible scheduling. Call Us At [phone]",
+        h3: "DEFAULT: Ideal for Business Needs",
+        p3: "DEFAULT: Office cleanouts | Retail renovations | Property management | Warehouse trash | Restaurant remodels | Business relocations | Inventory disposal | Commercial events",
         seoContent:
-          "DEFAULT: <h2>Residential Water Damage Restoration in [location]</h2><p>For dependable residential water damage restoration in [location], homeowners trust us for rapid response, quality restoration, and thorough service. We help keep your home safe and comfortable. Call Us At [phone]</p>",
-        slug: "DEFAULT: residential-water-damage-restoration",
+          "DEFAULT: <h2>Commercial Dumpster Rentals in [location]</h2><p>For dependable commercial dumpster rental in [location], businesses trust us for on-time delivery, scalable bin sizes, and flexible pickup schedules. We help keep your workspace clean and efficient. Call Us At [phone]</p>",
+        slug: "DEFAULT: commercial-dumpster-rental",
         imageUrl:
           "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
       },
       {
-        title: "DEFAULT: Premium Water Damage Restoration in [location]",
+        title: "DEFAULT: Roll Off Dumpster Rental in [location]",
         description:
-          "DEFAULT: Call Us At [phone]. Premium water damage restoration in [location] for high-end properties and locations requiring top-quality restoration services.",
-        h2: "DEFAULT: Premium Restoration Services for Special Properties",
-        p2: "DEFAULT: We provide premium water damage restoration in [location] with same-day or next-day response. Choose from top-tier restoration services for your valuable property—no compromising on quality or results. Call Us At [phone]",
-        h3: "DEFAULT: Premium Water Damage Restoration Works Great For",
-        p3: "DEFAULT: Luxury homes | Executive offices | High-end hotels | Premium retail | Upscale restaurants | Historic properties | Custom homes | Exclusive properties",
+          "DEFAULT: Call Us At [phone]. Quick and affordable roll off dumpster rental in [location] for residential and commercial projects of all sizes.",
+        h2: "DEFAULT: Easy Roll Off Dumpsters Delivered to You",
+        p2: "DEFAULT: We provide roll off dumpster rental in [location] with same-day or next-day delivery. Choose from multiple bin sizes to match your project—no overpaying, no delays. Call Us At [phone]",
+        h3: "DEFAULT: Roll Off Dumpsters Work Great For",
+        p3: "DEFAULT: Home renovations | Roofing jobs | Office cleanouts | Deck removals | Moving cleanups | Landscaping waste | Construction sites | Bulk trash disposal",
         seoContent:
-          "DEFAULT: <h2>Premium Water Damage Restoration in [location]</h2><p>Our premium water damage restoration service in [location] is meticulous, comprehensive, and built to restore your property to perfection. With top-tier equipment and expert service, your property will be fully restored. Call Us At [phone]</p>",
-        slug: "DEFAULT: premium-water-damage-restoration",
+          "DEFAULT: <h2>Roll Off Dumpster Rental in [location]</h2><p>Our roll off dumpster rental service in [location] is fast, flexible, and built to make cleanup easy. With driveway-safe placement and responsive pickup, your job stays clean and on track. Call Us At [phone]</p>",
+        slug: "DEFAULT: roll-off-dumpster-rental",
         imageUrl:
           "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
       },
       {
-        title: "DEFAULT: Same Day Water Damage Restoration in [location]",
+        title: "DEFAULT: Same Day Dumpster Rental in [location]",
         description:
-          "DEFAULT: Call Us At [phone]. Get same day water damage restoration in [location] when you're facing an emergency or urgent water damage needs immediate attention.",
-        h2: "DEFAULT: Need Water Damage Help Fast? We've Got You",
-        p2: "DEFAULT: When time's critical, we're the go-to for same day water damage restoration in [location]. Call in the morning, get our team on-site that afternoon—no stress, no wait. Call Us At [phone]",
-        h3: "DEFAULT: Perfect for Water Damage Emergencies",
-        p3: "DEFAULT: Burst pipes | Flooding emergencies | Storm damage | Sewage backups | Appliance failures | Roof leaks | Emergency situations | Urgent water damage",
+          "DEFAULT: Call Us At [phone]. Get same day dumpster rental in [location] when you're on a tight deadline or last-minute project needs fast cleanup.",
+        h2: "DEFAULT: Need a Dumpster Fast? We've Got You",
+        p2: "DEFAULT: When time's tight, we're the go-to for same day dumpster rental in [location]. Call in the morning, get your dumpster delivered that afternoon—no stress, no wait. Call Us At [phone]",
+        h3: "DEFAULT: Perfect for Urgent Situations",
+        p3: "DEFAULT: Last-minute renovations | Emergency cleanouts | Contractor delays | Weekend projects | DIY demo jobs | Tenant move-outs | Cleanup deadlines | Real estate flips",
         seoContent:
-          "DEFAULT: <h2>Same Day Water Damage Restoration in [location]</h2><p>Our same day water damage restoration in [location] helps you handle emergencies fast. With responsive service and immediate availability, you get the help you need without delay. Call Us At [phone]</p>",
-        slug: "DEFAULT: same-day-water-damage-restoration",
+          "DEFAULT: <h2>Same Day Dumpster Rental in [location]</h2><p>Our same day dumpster rental in [location] helps you keep projects moving fast. With responsive service and real-time availability, you get the bin you need without missing a beat. Call Us At [phone]</p>",
+        slug: "DEFAULT: same-day-dumpster-rental",
         imageUrl:
           "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
       },
       {
-        title: "DEFAULT: Storm Water Damage Restoration in [location]",
+        title: "DEFAULT: Yard Waste Dumpster Rental in [location]",
         description:
-          "DEFAULT: Call Us At [phone]. Reliable storm water damage restoration in [location] for hurricane damage, heavy rains, and severe weather events.",
-        h2: "DEFAULT: Keep Your Property Safe from Storm Damage",
-        p2: "DEFAULT: Our storm water damage restoration in [location] provides comprehensive protection and restoration services for severe weather events. Keep your property safe and secure. Call Us At [phone]",
-        h3: "DEFAULT: Great For All Types of Storm Damage",
-        p3: "DEFAULT: Hurricane damage | Heavy rain damage | Wind damage | Hail damage | Tornado damage | Severe storms | Flash floods | Weather emergencies",
+          "DEFAULT: Call Us At [phone]. Affordable yard waste dumpster rental in [location] for landscaping projects, tree removal, and outdoor cleanups.",
+        h2: "DEFAULT: Tackling Yard Work? Let Us Handle the Haul",
+        p2: "DEFAULT: Our yard waste dumpster rental in [location] makes clearing branches, dirt, sod, and clippings easy. Keep your lawn project tidy and dump-free. Call Us At [phone]",
+        h3: "DEFAULT: Great For All Types of Yard Debris",
+        p3: "DEFAULT: Tree limbs | Bush trimmings | Grass clippings | Dirt and sod | Landscaping scraps | Garden cleanups | Storm debris | Backyard renovations",
         seoContent:
-          "DEFAULT: <h2>Storm Water Damage Restoration in [location]</h2><p>Protect your property from storm damage with storm water damage restoration in [location]. We deliver emergency services right to your location and handle all restoration and repairs. Call Us At [phone]</p>",
-        slug: "DEFAULT: storm-water-damage-restoration",
+          "DEFAULT: <h2>Yard Waste Dumpster Rental in [location]</h2><p>Clean up your yard the smart way with yard waste dumpster rental in [location]. We deliver right to your property and haul it away when you're done. Call Us At [phone]</p>",
+        slug: "DEFAULT: yard-waste-dumpster-rental",
         imageUrl:
           "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
       },
@@ -368,51 +370,55 @@ function ensureServiceDataLists(serviceData: any): any {
 
   const ensuredLists =
     Array.isArray(serviceData.lists) && serviceData.lists.length > 0
-      ? serviceData.lists.map((item: any, index: number) => ({
-          title: getValueOrDefault(
-            item?.title,
-            defaultServiceData.lists[index]?.title ||
-              "DEFAULT: Water Damage Restoration Service",
-          ),
-          description: getValueOrDefault(
-            item?.description,
-            defaultServiceData.lists[index]?.description ||
-              "DEFAULT: Professional water damage restoration service in [location].",
-          ),
-          h2: getValueOrDefault(
-            item?.h2,
-            defaultServiceData.lists[index]?.h2 ||
-              "DEFAULT: Professional Service",
-          ),
-          p2: getValueOrDefault(
-            item?.p2,
-            defaultServiceData.lists[index]?.p2 ||
-              "DEFAULT: Quality water damage restoration service in [location].",
-          ),
-          h3: getValueOrDefault(
-            item?.h3,
-            defaultServiceData.lists[index]?.h3 || "DEFAULT: Service Benefits",
-          ),
-          p3: getValueOrDefault(
-            item?.p3,
-            defaultServiceData.lists[index]?.p3 ||
-              "DEFAULT: Professional solutions for all your needs.",
-          ),
-          seoContent: getValueOrDefault(
-            item?.seoContent,
-            defaultServiceData.lists[index]?.seoContent ||
-              "DEFAULT: <h2>Professional Water Damage Restoration Service</h2><p>Quality service in [location].</p>",
-          ),
-          slug: getValueOrDefault(
-            item?.slug,
-            defaultServiceData.lists[index]?.slug || "default-service",
-          ),
-          imageUrl: getValueOrDefault(
-            item?.imageUrl,
-            defaultServiceData.lists[index]?.imageUrl ||
-              "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
-          ),
-        }))
+      ? serviceData.lists.map((item: any, index: number) => {
+          const localImageList = localImages.servicePage.lists?.[String(index) as keyof typeof localImages.servicePage.lists];
+          return {
+            title: getValueOrDefault(
+              item?.title,
+              defaultServiceData.lists[index]?.title ||
+                "DEFAULT: Dumpster Rental Service",
+            ),
+            description: getValueOrDefault(
+              item?.description,
+              defaultServiceData.lists[index]?.description ||
+                "DEFAULT: Professional dumpster rental service in [location].",
+            ),
+            h2: getValueOrDefault(
+              item?.h2,
+              defaultServiceData.lists[index]?.h2 ||
+                "DEFAULT: Professional Service",
+            ),
+            p2: getValueOrDefault(
+              item?.p2,
+              defaultServiceData.lists[index]?.p2 ||
+                "DEFAULT: Quality dumpster rental service in [location].",
+            ),
+            h3: getValueOrDefault(
+              item?.h3,
+              defaultServiceData.lists[index]?.h3 || "DEFAULT: Service Benefits",
+            ),
+            p3: getValueOrDefault(
+              item?.p3,
+              defaultServiceData.lists[index]?.p3 ||
+                "DEFAULT: Professional solutions for all your needs.",
+            ),
+            seoContent: getValueOrDefault(
+              item?.seoContent,
+              defaultServiceData.lists[index]?.seoContent ||
+                "DEFAULT: <h2>Professional Dumpster Rental Service</h2><p>Quality service in [location].</p>",
+            ),
+            slug: getValueOrDefault(
+              item?.slug,
+              defaultServiceData.lists[index]?.slug || "default-service",
+            ),
+            imageUrl: getValueOrDefault(
+              localImageList && 'imageUrl' in localImageList ? `/servicePage/${localImageList.imageUrl}` : undefined,
+              item?.imageUrl ||
+                defaultServiceData.lists[index]?.imageUrl ||
+                "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
+            ),
+          };
+        })
       : defaultServiceData.lists;
 
   return {
@@ -552,14 +558,14 @@ const contactContent: any = {
   ),
   zipCode: getValueOrDefault(contactDataJson?.zipCode, "DEFAULT: 12345"),
   bannerImage: getValueOrDefault(
-    contactDataJson?.bannerImage,
+    `/ContactInfo/${localImages.ContactInfo.bannerImage}`,
     "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
   ),
   logoImage: getValueOrDefault(
-    contactDataJson?.logoImage,
+    `/ContactInfo/${localImages.ContactInfo.logoImage}`,
     "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
   ),
-  favicon: getValueOrDefault(contactDataJson?.favicon, "DEFAULT: /favicon.ico"),
+  favicon: getValueOrDefault((localImages.ContactInfo as any)?.favicon ? `/ContactInfo/${(localImages.ContactInfo as any).favicon}` : undefined, "DEFAULT: /favicon.ico"),
   googleAnalytics: getValueOrDefault(
     contactDataJson?.googleAnalytics,
     "DEFAULT: GA_MEASUREMENT_ID",
@@ -596,7 +602,7 @@ const aboutContent: any = {
     "DEFAULT: Your Trusted Partner for Water Damage Restoration Solutions",
   ),
   bannerImage: getValueOrDefault(
-    aboutBannerImage,
+    `/about/${localImages.about.bannerImage}`,
     "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
   ),
   h1Banner: getValueOrDefault(
@@ -612,7 +618,7 @@ const aboutContent: any = {
     "DEFAULT: We provide professional water damage restoration in [location] for homeowners, businesses, and property managers. Whether you're dealing with flood damage, burst pipes, storm damage, or sewage backups, our certified technicians are ready to provide fast, effective restoration services. From water extraction and structural drying to mold remediation and full reconstruction, we handle every aspect of water damage recovery. With 24/7 emergency response, advanced equipment, and direct insurance billing, our service is trusted by customers who need fast and reliable solutions for water damage emergencies.",
   ),
   h2Image: getValueOrDefault(
-    h2Image,
+    `/about/${localImages.about.h2Image}`,
     "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
   ),
   missionSection: ensureMissionSection(missionSection),
@@ -641,8 +647,6 @@ const aboutContent: any = {
     };
   })(),
 };
-
-
 
 // DEFAULT: Contact Page Content with comprehensive default fallbacks
 const {
@@ -683,7 +687,7 @@ const contactPageContent: any = {
     "DEFAULT: Emergency Water Damage? Contact Us Now!",
   ),
   bannerImage: getValueOrDefault(
-    contactPageBannerImage,
+    `/contact/${localImages.contact.bannerImage}`,
     "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
   ),
   h1Banner: getValueOrDefault(
@@ -696,7 +700,7 @@ const contactPageContent: any = {
   ),
   h2: getValueOrDefault(h2, "DEFAULT: Get Your Free Water Damage Assessment"),
   h2Image: getValueOrDefault(
-    contacth2Image,
+    `/contact/${localImages.contact.h2Image}`,
     "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
   ),
   p2: getValueOrDefault(
@@ -860,7 +864,7 @@ const homePageContent: any = {
     "DEFAULT: Fast, Professional, Reliable",
   ),
   bannerImage: getValueOrDefault(
-    homeBannerImage,
+    `/home/${localImages.home.bannerImage}`,
     "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
   ),
   h1Banner: getValueOrDefault(
@@ -880,7 +884,7 @@ const homePageContent: any = {
     "DEFAULT: We provide the fastest, most reliable water damage restoration service in [location] with certified technicians and comprehensive restoration solutions.",
   ),
   h2Image: getValueOrDefault(
-    homeh2Image,
+    `/home/${localImages.home.h2Image}`,
     "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
   ),
   h3: getValueOrDefault(
@@ -892,7 +896,7 @@ const homePageContent: any = {
     "DEFAULT: From flood damage to burst pipes, we have the expertise and equipment to restore your property quickly and efficiently in [location].",
   ),
   h3Image: getValueOrDefault(
-    homeh3Image,
+    `/home/${localImages.home.h3Image}`,
     "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
   ),
   mapLink: getValueOrDefault(
@@ -906,13 +910,13 @@ const homePageContent: any = {
       title: "DEFAULT: Why Choose Our Water Damage Restoration Service?",
       whyChooseData: [
         {
-          title: "DEFAULT: Fast Delivery",
-          description: "DEFAULT: Same-day and next-day delivery available",
+          title: "DEFAULT: Fast Response",
+          description: "DEFAULT: 24/7 emergency response available",
           imageUrl: "DEFAULT: Comprehensive-Services.svg",
         },
         {
-          title: "DEFAULT: Clean Facilities",
-          description: "DEFAULT: Well-maintained, sanitized water damage restoration in [location]",
+          title: "DEFAULT: Professional Restoration",
+          description: "DEFAULT: Certified technicians and advanced equipment in [location]",
           imageUrl: "DEFAULT: Transparent-Pricing.png",
         },
         {
@@ -959,17 +963,17 @@ const homePageContent: any = {
     const defaultAffordable = {
       title: "DEFAULT: Affordable Water Damage Restoration Solutions",
       description:
-        "DEFAULT: Get the best prices on water damage restorations in [location] with transparent pricing and no hidden fees.",
+        "DEFAULT: Get the best prices on water damage restoration in [location] with transparent pricing and no hidden fees.",
       ctaText: "DEFAULT: Get Your Free Quote",
       cards: [
         {
-          title: "DEFAULT: Event Rentals",
-          description: "DEFAULT: Perfect for weddings, festivals, and outdoor events",
+          title: "DEFAULT: Emergency Services",
+          description: "DEFAULT: Perfect for floods, storms, and water emergencies",
           price: "DEFAULT: Starting at $99",
         },
         {
-          title: "DEFAULT: Construction Sites",
-          description: "DEFAULT: Ideal for construction and work sites",
+          title: "DEFAULT: Restoration Services",
+          description: "DEFAULT: Ideal for complete property restoration",
           price: "DEFAULT: Starting at $149",
         },
       ],
@@ -1015,24 +1019,24 @@ const homePageContent: any = {
   })(),
   processWidget: (() => {
     const defaultProcess = {
-      title: "DEFAULT: Simple 3-Step Process",
+      title: "DEFAULT: Simple 3-Step Restoration Process",
       description:
         "",
       steps: [
         {
           step: "DEFAULT: 1",
-          title: "DEFAULT: Call or Book Online",
-          description: "DEFAULT: Contact us at [phone] or book online",
+          title: "DEFAULT: Emergency Call",
+          description: "DEFAULT: Contact us at [phone] for emergency response",
         },
         {
           step: "DEFAULT: 2",
-          title: "DEFAULT: We Deliver",
-          description: "DEFAULT: Fast delivery to your location in [location]",
+          title: "DEFAULT: Assessment & Extraction",
+          description: "DEFAULT: Fast response to your location in [location]",
         },
         {
           step: "DEFAULT: 3",
-          title: "DEFAULT: We Pick Up",
-          description: "DEFAULT: We handle pickup and disposal for you",
+          title: "DEFAULT: Restoration & Repair",
+          description: "DEFAULT: We handle complete restoration for you",
         },
       ],
     };
@@ -1089,7 +1093,7 @@ const {
   metaTitle:
     locationMetaTitle = "DEFAULT: Water Damage Restoration Service Areas | [location] and Surrounding Areas",
   metaDescription:
-    locationMetaDescription = "DEFAULT: We provide water damage restoration services throughout [location] and surrounding areas. Find your location and get fast, reliable service today.",
+    locationMetaDescription = "DEFAULT: We provide water damage restoration services throughout [location] and surrounding areas. Find your location and get fast, reliable restoration today.",
   bannerQuote:
     locationBannerQuote = "DEFAULT: Serving [location] and Surrounding Areas",
   bannerImage:
@@ -1112,14 +1116,14 @@ const locationPageContent: any = {
   ),
   metaDescription: getValueOrDefault(
     locationMetaDescription,
-    "DEFAULT: We provide water damage restoration services throughout [location] and surrounding areas. Find your location and get fast, reliable service today.",
+    "DEFAULT: We provide water damage restoration services throughout [location] and surrounding areas. Find your location and get fast, reliable restoration today.",
   ),
   bannerQuote: getValueOrDefault(
     locationBannerQuote,
     "DEFAULT: Serving [location] and Surrounding Areas",
   ),
   bannerImage: getValueOrDefault(
-    locationBannerImage,
+    `/location/${localImages.location.bannerImage}`,
     "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
   ),
   h1Banner: getValueOrDefault(
@@ -1159,34 +1163,34 @@ const {
   metaTitle:
     brandsMetaTitle = "DEFAULT: Our Trusted Water Damage Restoration Partners | Quality Equipment & Service",
   metaDescription:
-    brandsMetaDescription = "DEFAULT: Learn about our trusted water damage restoration partners and equipment. We use only the highest quality equipment for reliable service in [location].",
+    brandsMetaDescription = "DEFAULT: Learn about our trusted water damage restoration partners and equipment. We use only the highest quality restoration equipment for reliable service in [location].",
   bannerImage:
     brandsBannerImage = "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
   h1Banner: brandsH1Banner = "DEFAULT: Our Trusted Water Damage Restoration Partners",
-  h2: brandh2 = "DEFAULT: Quality Facilities You Can Trust",
-  p2: brandsP2 = "DEFAULT: We partner with the most reliable suppliers in the industry to ensure you get quality water damage restoration and professional service every time in [location].",
+  h2: brandh2 = "DEFAULT: Quality Equipment You Can Trust",
+  p2: brandsP2 = "DEFAULT: We partner with the most reliable suppliers in the industry to ensure you get quality restoration equipment and professional service every time in [location].",
   h2Image:
     brandsh2Image = "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
   brandslist = [
     {
-      name: "DEFAULT: Premium Water Damage Solutions",
+      name: "DEFAULT: Premium Water Damage Restoration Solutions",
       description: "DEFAULT: Industry-leading water damage restoration equipment",
       image:
         "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930+1",
-      brandName: "DEFAULT: Premium Water Damage Solutions",
+      brandName: "DEFAULT: Premium Water Damage Restoration Solutions",
       brandLink: "DEFAULT: #",
       brandDescription:
         "DEFAULT: Industry-leading water damage restoration equipment and professional service",
     },
     {
-      name: "DEFAULT: Reliable Water Restoration Management",
-      description: "DEFAULT: Trusted water extraction and damage restoration solutions",
+      name: "DEFAULT: Reliable Restoration Management",
+      description: "DEFAULT: Trusted restoration management solutions",
       image:
         "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930+2",
-      brandName: "DEFAULT: Reliable Waste Management",
+      brandName: "DEFAULT: Reliable Restoration Management",
       brandLink: "DEFAULT: #",
       brandDescription:
-        "DEFAULT: Trusted waste management solutions for all your needs",
+        "DEFAULT: Trusted restoration management solutions for all your needs",
     },
   ],
 } = (brandsDataJson as any) || {};
@@ -1198,10 +1202,10 @@ const brandsContent: any = {
   ),
   metaDescription: getValueOrDefault(
     brandsMetaDescription,
-    "DEFAULT: Learn about our trusted water damage restoration partners and equipment. We use only the highest quality equipment for reliable service in [location].",
+    "DEFAULT: Learn about our trusted water damage restoration partners and equipment. We use only the highest quality restoration equipment for reliable service in [location].",
   ),
   bannerImage: getValueOrDefault(
-    brandsBannerImage,
+     `/ourBrand/${localImages.ourBrand.bannerImage}`,
     "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
   ),
   h1Banner: getValueOrDefault(
@@ -1211,30 +1215,30 @@ const brandsContent: any = {
   h2: getValueOrDefault(brandh2, "DEFAULT: Quality Equipment You Can Trust"),
   p2: getValueOrDefault(
     brandsP2,
-    "DEFAULT: We partner with the most reliable suppliers in the industry to ensure you get quality equipment and professional service every time in [location].",
+    "DEFAULT: We partner with the most reliable suppliers in the industry to ensure you get quality restoration equipment and professional service every time in [location].",
   ),
   h2Image: getValueOrDefault(
-    brandsh2Image,
+    `/ourBrand/${localImages.ourBrand.h2Image}`,
     "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
   ),
   brandslist: (() => {
     const defaultBrandsList = [
       {
-        name: "DEFAULT: Premium Water Damage Solutions",
+        name: "DEFAULT: Premium Water Damage Restoration Solutions",
         description: "DEFAULT: Industry-leading water damage restoration equipment",
         image:
           "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
-        brandName: "DEFAULT: Premium Water Damage Solutions",
+        brandName: "DEFAULT: Premium Water Damage Restoration Solutions",
         brandLink: "DEFAULT: #",
         brandDescription:
           "DEFAULT: Industry-leading water damage restoration equipment and professional service",
       },
       {
-        name: "DEFAULT: Reliable Sanitation Management",
-        description: "DEFAULT: Trusted sanitation and portable restroom solutions",
+        name: "DEFAULT: Reliable Restoration Management",
+        description: "DEFAULT: Trusted restoration and water damage solutions",
         image:
           "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
-        brandName: "DEFAULT: Reliable Waste Management",
+        brandName: "DEFAULT: Reliable Restoration Management",
         brandLink: "DEFAULT: #",
         brandDescription:
           "DEFAULT: Trusted waste management solutions for all your needs",
@@ -1280,9 +1284,9 @@ const brandsContent: any = {
 // DEFAULT: Service Page Content with comprehensive default fallbacks
 const {
   metaTitle:
-    serviceMetaTitle = "DEFAULT: Professional Water Damage Restoration Services in [location] | All Property Types",
+    serviceMetaTitle = "DEFAULT: Professional Water Damage Restoration Services in [location] | All Event Types",
   metaDescription:
-    serviceMetaDescription = "DEFAULT: Complete water damage restoration services in [location]. Homes, businesses, emergencies, and insurance claims. Call [phone] for fast service.",
+    serviceMetaDescription = "DEFAULT: Complete water damage restoration services in [location]. Emergency response, flood damage, mold removal, and structural drying. Call [phone] for fast service.",
   bannerQuote:
     serviceBannerQuote = "DEFAULT: Professional Water Damage Restoration Services",
   bannerImage:
@@ -1290,23 +1294,23 @@ const {
   h1Banner:
     serviceH1Banner = "DEFAULT: Professional Water Damage Restoration Services in [location]",
   p1Banner:
-    serviceP1Banner = "DEFAULT: We provide comprehensive water damage restoration services for all types of properties and emergencies in [location]. From homes to commercial buildings, we have you covered.",
+    serviceP1Banner = "DEFAULT: We provide comprehensive water damage restoration services for all types of properties and emergencies in [location]. From residential homes to commercial buildings, we have you covered.",
   serviceTitle = "DEFAULT: Our Water Damage Restoration Services",
   serviceData = {
     title: "DEFAULT: Complete Water Damage Restoration Solutions",
-    p: "DEFAULT: We offer a full range of water damage restoration services to meet all your emergency needs in [location].",
+    p: "DEFAULT: We offer a full range of water damage restoration services to meet all your property restoration needs in [location].",
     lists: [
       {
-        title: "DEFAULT: Residential Water Damage Restoration in [location]",
+        title: "DEFAULT: Emergency Water Damage Services in [location]",
         description:
-          "DEFAULT: Call Us At [phone]. We offer residential water damage restoration in [location] for flood damage, burst pipes, storm damage, and more.",
-        h2: "DEFAULT: Need Water Damage Restoration for Your Home?",
-        p2: "DEFAULT: Residential water damage restoration in [location] makes it easy to restore your home from water damage quickly and professionally. Whether you're dealing with basement flooding or kitchen water damage, we've got the right solution for the job. Call Us At [phone]",
-        h3: "DEFAULT: Perfect For All Home Water Damage",
-        p3: "DEFAULT: Basement flooding | Kitchen water damage | Bathroom flooding | Burst pipe damage | Storm water damage | Appliance leaks | Toilet overflows | Water heater failures",
+          "DEFAULT: Call Us At [phone]. We offer emergency water damage services in [location] for flood cleanup, water extraction, structural drying, and emergency restoration.",
+        h2: "DEFAULT: Need Emergency Water Damage Services?",
+        p2: "DEFAULT: Emergency water damage services in [location] make it easy to quickly address water emergencies and restore your property. Whether you're dealing with burst pipes or flooding, we've got the expertise for the job. Call Us At [phone]",
+        h3: "DEFAULT: Perfect For Water Damage Emergencies",
+        p3: "DEFAULT: Flood cleanup | Water extraction | Structural drying | Emergency response | Burst pipe repair | Storm damage | Sewage cleanup | Mold prevention",
         seoContent:
-          "DEFAULT: <h2>Residential Water Damage Restoration in [location]</h2><p>Our residential water damage restoration service in [location] is designed to keep your home restoration organized and stress-free. We deliver professional equipment with 24/7 emergency service, perfect for water damage big and small. Call Us At [phone]</p>",
-        slug: "DEFAULT: residential-water-damage-restoration",
+          "DEFAULT: <h2>Emergency Water Damage Services in [location]</h2><p>Our emergency water damage services in [location] are designed to respond quickly to water emergencies and restore your property. We provide comprehensive restoration services with rapid response times, perfect for residential and commercial properties. Call Us At [phone]</p>",
+        slug: "DEFAULT: emergency-water-damage-services",
         imageUrl:
           "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
       }
@@ -1317,18 +1321,18 @@ const {
 const servicePageContent: any = {
   metaTitle: getValueOrDefault(
     serviceMetaTitle,
-    "DEFAULT: Professional Water Damage Restoration Services in [location] | All Property Types",
+    "DEFAULT: Professional Water Damage Restoration Services in [location] | All Event Types",
   ),
   metaDescription: getValueOrDefault(
     serviceMetaDescription,
-    "DEFAULT: Complete water damage restoration services in [location]. Homes, businesses, emergencies, and insurance claims. Call [phone] for fast service.",
+    "DEFAULT: Complete water damage restoration services in [location]. Emergency response, flood damage, mold removal, and structural drying. Call [phone] for fast service.",
   ),
   bannerQuote: getValueOrDefault(
     serviceBannerQuote,
     "DEFAULT: Professional Water Damage Restoration Services",
   ),
   bannerImage: getValueOrDefault(
-    serviceBannerImage,
+    `/servicePage/${localImages.servicePage.bannerImage}`,
     "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
   ),
   h1Banner: getValueOrDefault(
@@ -1337,7 +1341,7 @@ const servicePageContent: any = {
   ),
   p1Banner: getValueOrDefault(
     serviceP1Banner,
-    "DEFAULT: We provide comprehensive water damage restoration services for all types of properties and emergencies in [location]. From homes to commercial buildings, we have you covered.",
+    "DEFAULT: We provide comprehensive water damage restoration services for all types of properties and emergencies in [location]. From residential homes to commercial buildings, we have you covered.",
   ),
   serviceTitle: getValueOrDefault(
     serviceTitle,
@@ -1355,25 +1359,25 @@ const subDomainUrlContent: any = (() => {
       name: "DEFAULT: Your City",
       publishedAt: "DEFAULT: 2025-01-01",
       slug: "DEFAULT: your-city",
-      metaTitle: "DEFAULT: Affordable Water Damage Restoration Services in Your City",
+      metaTitle: "DEFAULT: Affordable Dumpster Rental Services in Your City",
       metaDescription:
-        "DEFAULT: Looking for reliable water damage restoration in Your City? We offer fast response, comprehensive services, and affordable pricing. Call us at [phone]!",
+        "DEFAULT: Looking for reliable dumpster rental in Your City? We offer fast delivery, flexible sizes, and affordable pricing. Call us at [phone]!",
       bannerImage:
         "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
-      h1Banner: "DEFAULT: Water Damage Restoration in Your City Near You",
-      h2: "DEFAULT: Your Trusted Water Damage Restoration Partner in Your City",
-      p2: "DEFAULT: Whether you're dealing with flood damage, burst pipes, or storm damage, our water damage restoration service in Your City has the right solution for the job.",
+      h1Banner: "DEFAULT: Dumpster Rentals in Your City Near You",
+      h2: "DEFAULT: Your Trusted Dumpster Rental Partner in Your City",
+      p2: "DEFAULT: Whether you're managing a home renovation, clearing out a property, or running a construction site, our dumpster rental service in Your City has the right bin for the job.",
       h2Image:
         "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
-      serviceTtile: "DEFAULT: Our Water Damage Restoration Services",
+      serviceTtile: "DEFAULT: Our Dumpster Rental Services",
       needsSection: {
-        title: "DEFAULT: Why Choose Us for Water Damage Restoration in Your City",
+        title: "DEFAULT: Why Choose Us for Dumpster Rental in Your City",
         description: "DEFAULT: Professional service you can trust",
         needslist: [
           {
             title: "DEFAULT: Same-Day Delivery",
             description:
-              "DEFAULT: Get our team when you need us. We offer fast response so your restoration doesn't have to wait.",
+              "DEFAULT: Get your dumpster when you need it. We offer fast delivery so your project doesn't have to wait.",
           },
           {
             title: "DEFAULT: Flat-Rate Pricing",
@@ -1383,28 +1387,28 @@ const subDomainUrlContent: any = (() => {
         ],
       },
       processSection: {
-        title: "DEFAULT: How Our Water Damage Restoration Process Works",
+        title: "DEFAULT: How Our Dumpster Rental Process Works",
         processData: [
           {
-            title: "DEFAULT: Assess Your Water Damage",
+            title: "DEFAULT: Choose Your Dumpster",
             description:
-              "DEFAULT: We evaluate the extent of water damage. Not sure? Our team can help you assess.",
+              "DEFAULT: Pick the size that fits your cleanup. Not sure? Our team can help you decide.",
           },
           {
-            title: "DEFAULT: Begin Restoration",
+            title: "DEFAULT: Schedule Delivery",
             description:
-              "DEFAULT: Tell us your emergency details. We'll start restoration right where you need it.",
+              "DEFAULT: Tell us when and where. We'll drop the bin off right where you need it.",
           },
         ],
       },
       h5: "DEFAULT: Affordable Water Damage Restoration Company for Every Emergency",
-      p5: "DEFAULT: Whether it's a home emergency or a commercial building, our water damage restoration offers the ideal restoration solution.",
+      p5: "DEFAULT: Whether it's a flood emergency or storm damage, our water damage restoration services offer the ideal restoration solution.",
       h5Image:
         "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
       faq: [
         {
-          ques: "DEFAULT: What types of water damage restoration do you offer?",
-          ans: "DEFAULT: We restore multiple types including flood damage, burst pipes, storm damage, and sewage backups to address every situation.",
+          ques: "DEFAULT: What types of water damage do you restore?",
+          ans: "DEFAULT: We restore all types of water damage including flood damage, burst pipes, storm damage, sewage backups, and appliance leaks.",
         },
       ],
       reviews: [],
@@ -1439,7 +1443,7 @@ const subDomainUrlContent: any = (() => {
         ),
         metaDescription: getValueOrDefault(
           location?.metaDescription,
-          `DEFAULT: Looking for reliable water damage restoration in ${location?.name || key}? We offer fast response and professional restoration.`,
+          `DEFAULT: Looking for reliable water damage restoration in ${location?.name || key}? We offer fast response and professional restoration services.`,
         ),
         bannerImage: getValueOrDefault(
           location?.bannerImage,
@@ -1455,7 +1459,7 @@ const subDomainUrlContent: any = (() => {
         ),
         p2: getValueOrDefault(
           location?.p2,
-          `DEFAULT: Professional water damage restoration service in ${location?.name || key} for all your emergency and restoration needs.`,
+          `DEFAULT: Professional water damage restoration service in ${location?.name || key} for all your property restoration needs.`,
         ),
         h2Image: getValueOrDefault(
           location?.h2Image,
@@ -1477,7 +1481,7 @@ const subDomainUrlContent: any = (() => {
               {
                 title: "DEFAULT: Same-Day Delivery",
                 description:
-                  "DEFAULT: Fast response so your restoration doesn't have to wait.",
+                  "DEFAULT: Fast delivery so your project doesn't have to wait.",
               },
             ],
           };
@@ -1523,8 +1527,8 @@ const subDomainUrlContent: any = (() => {
             title: "DEFAULT: How Our Water Damage Restoration Process Works",
             processData: [
               {
-                title: "DEFAULT: Assess Your Water Damage",
-                description: "DEFAULT: We evaluate the extent of damage. Our team can help you assess the situation.",
+                title: "DEFAULT: Choose Your Restoration Service",
+                description: "DEFAULT: Pick the restoration service that fits your water damage emergency.",
               },
             ],
           };
@@ -1567,7 +1571,7 @@ const subDomainUrlContent: any = (() => {
         ),
         p5: getValueOrDefault(
           location?.p5,
-          "DEFAULT: Whether it's a home emergency or a commercial building, our water damage restoration offers the ideal restoration solution.",
+          "DEFAULT: Whether it's a flood emergency or storm damage, our water damage restoration services offer the ideal restoration solution.",
         ),
         h5Image: getValueOrDefault(
           location?.h5Image,
@@ -1588,7 +1592,7 @@ const subDomainUrlContent: any = (() => {
             : [
                 {
                   ques: "DEFAULT: What types of water damage do you restore?",
-                  ans: "DEFAULT: We restore multiple types to address every situation.",
+                  ans: "DEFAULT: We offer multiple types to suit every event.",
                 },
               ],
         reviews: Array.isArray(location?.reviews) ? location.reviews : [],
@@ -1689,6 +1693,7 @@ const content: {
     contactContent || ContactInfo,
     ContactInfo,
   ),
+ 
   contactPageContent: replacePlaceholders(
     contactPageContent || {},
     ContactInfo,

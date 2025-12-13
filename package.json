@@ -2,11 +2,13 @@
   "name": "havc",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
+"scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node ./extract-imagekit-urls.js && next build",
+    "build-only": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "extract-urls": "node ./extract-imagekit-urls.js"
   },
   "dependencies": {
     "@next/third-parties": "^14.2.29",

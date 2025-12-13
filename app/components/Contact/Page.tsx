@@ -109,7 +109,7 @@ const Page = () => {
       <div className="xl:w-full w-11/12 mx-4 md:mx-0 mt-16 md:mb-4 px-10 flex flex-col gap-6 md:flex-row justify-center items-center group md:space-x-2">
         <Image
           aria-hidden="true"
-          src="https://ik.imagekit.io/h7rza8886p/img1.webp?updatedAt=1747997044944"
+          src="/img1.webp"
           alt="Calling icon"
           width={200}
           height={200}

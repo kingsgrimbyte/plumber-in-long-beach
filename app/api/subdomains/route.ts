@@ -1,9 +1,27 @@
 import { NextResponse } from 'next/server';
 import { readFileSync } from 'fs';
 import { join } from 'path';
+import localImages from "@/local-image-paths.json"
 
+// This tells Next.js to dynamically generate this route at request time
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
+
+// Helper function to provide fallback for empty, null, or missing values
+function getValueOrDefault(value: any, defaultValue: any): any {
+  if (
+    value === null ||
+    value === undefined ||
+    value === "" ||
+    (Array.isArray(value) && value.length === 0) ||
+    (typeof value === "object" &&
+      value !== null &&
+      Object.keys(value).length === 0)
+  ) {
+    return defaultValue;
+  }
+  return value;
+}
 
 export async function GET(request: Request) {
   try {
@@ -16,13 +34,41 @@ export async function GET(request: Request) {
     const todayStr = today.toISOString().split('T')[0];
 
     // Convert object to array and apply date filter
-    const subdomainsArray = Object.keys(subdomainsObject).map((key) => {
+    // Create an array of keys to maintain consistent indexing
+    const subdomainKeys = Object.keys(subdomainsObject);
+    const subdomainsArray = subdomainKeys.map((key, index) => {
       const item = subdomainsObject[key] || {};
       // Ensure slug present
       if (!item.slug) {
         item.slug = key;
       }
-      return item;
+      
+      // Get local images for this subdomain using the same index order
+      const localImage = localImages?.subDomainUrlContent?.[String(index) as keyof typeof localImages.subDomainUrlContent];
+      
+      // Define fallback defaults for all fields
+      const baseFallback = {
+        bannerImage: "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
+        h2Image: "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930",
+        h5Image: "https://ik.imagekit.io/h7rza8886p/Default1.jpg?updatedAt=1757319001930"
+      };
+      
+      // Update image URLs to use local paths if available
+      return {
+        ...item,
+        bannerImage: getValueOrDefault(
+          localImage?.bannerImage ? `/subdomains/${localImage.bannerImage}` : item.bannerImage,
+          baseFallback.bannerImage
+        ),
+        h2Image: getValueOrDefault(
+          localImage?.h2Image ? `/subdomains/${localImage.h2Image}` : item.h2Image,
+          baseFallback.h2Image
+        ),
+        h5Image: getValueOrDefault(
+          localImage?.h5Image ? `/subdomains/${localImage.h5Image}` : item.h5Image,
+          baseFallback.h5Image
+        )
+      };
     });
 
     const filteredSubdomains = subdomainsArray
